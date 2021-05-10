@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+
+  /* Primary Colours */
+
+  --clr-primary-cyan: hsl(185, 75%, 39%);
+  --clr-primary-dark-blue: hsl(229, 23%, 23%);
+  --clr-primary-gray-blue: hsl(227, 10%, 46%);
+
+  /* Neutral Colours */
+
+  --clr-neutral-gray: hsl(0, 0%, 59%);
+
+  /* Fonts */
+
+  --ff-main: 'Kumbh Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  background: url(images/bg-pattern-top.svg) -250px -450px no-repeat, url(images/bg-pattern-bottom.svg) 700px 400px no-repeat;
+  background-color: var(--clr-primary-cyan);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: var(--ff-main);
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 15px 5px rgba(0,0,0,0.2);
+}
+
+.background-image {
+  display: block;
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.profile {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-size: .9rem;
+}
+
+.profile-image {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: -3rem; 
+  padding-bottom: 1rem;
+}
+
+.name {
+  color: var(--clr-primary-dark-blue);
+  padding-bottom: 1rem;
+}
+
+.age {
+  color: var(--clr-primary-gray-blue);
+  font-weight: lighter;
+  padding-left: .5rem;
+}
+
+.location {
+  color: var(--clr-primary-gray-blue);
+  font-weight: lighter;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--clr-neutral-gray);
+  opacity: .2;
+}
+
+
+.social-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stat {
+  color: var(--clr-primary-gray-blue);
+  font-size: .65rem;
+  letter-spacing: 1px;
+}
+
+.stat-highlight {
+  display: block;
+  color: var(--clr-primary-dark-blue);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-bottom: .5rem;
+  letter-spacing: 0px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  body {
+    background: url(images/bg-pattern-top.svg) -750px -500px no-repeat, url(images/bg-pattern-bottom.svg) 150px 400px no-repeat;
+    background-color: var(--clr-primary-cyan);
+  }
+}
