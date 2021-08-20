@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-.screenshots/card-component-desktop.png
-.screenshots/card-component-mobile.png
+![](.screenshots/card-component-desktop.png)
+![](.screenshots/card-component-mobile.png)
 
 ### Links
 
