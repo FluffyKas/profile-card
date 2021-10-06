@@ -23,13 +23,13 @@
 }
 
 body {
-  font-size: 18px;
   background: url(images/bg-pattern-top.svg)  right 50vw bottom 40vh no-repeat, url(images/bg-pattern-bottom.svg) 50vw 50vh no-repeat;
   background-color: var(--clr-primary-cyan);
-  min-height: 100vh;
   display: grid;
-  place-items: center;
   font-family: var(--ff-main);
+  font-size: 18px;
+  min-height: 100vh;
+  place-items: center;
 }
 
 .card {
@@ -39,15 +39,15 @@ body {
 }
 
 .background-image {
+  border-radius: 15px 15px 0 0;
   display: block;
   max-width: 100%;
-  border-radius: 15px 15px 0 0;
 }
 
 .profile {
-  text-align: center;
-  padding-bottom: 1.5rem;
   font-size: .9rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 .profile-image {
@@ -59,7 +59,7 @@ body {
 
 .name {
   color: var(--clr-primary-dark-blue);
-  padding-bottom: 1rem;
+  padding-bottom: .7rem;
 }
 
 .age {
@@ -84,8 +84,8 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  text-align: center;
   padding: 1.5rem;
+  text-align: center;
 }
 
 .stat {
@@ -95,10 +95,10 @@ hr {
 }
 
 .stat-highlight {
-  display: block;
   color: var(--clr-primary-dark-blue);
+  display: block;
   font-weight: 700;
   font-size: 1.1rem;
-  padding-bottom: .5rem;
   letter-spacing: 0px;
+  padding-bottom: .5rem;
 }
